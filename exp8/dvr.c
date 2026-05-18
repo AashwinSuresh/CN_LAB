@@ -33,7 +33,7 @@ void distanceVectorRouting(int n , int cost[MAX][MAX]){
                     // if(dist[i][k]!=inf && dist[k][j]!=inf){
                         if(dist[i][j]>(dist[i][k]+dist[k][j])){
                             dist[i][j]=(dist[i][k]+dist[k][j]);
-                            next[i][j]=k;
+                            next[i][j]=next[i][k];
                             updated=1;
                         }
                     // }
